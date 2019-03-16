@@ -1,0 +1,13 @@
+*.class
+**/target
+**/webapp/userfiles
+**/WEB-INF/classes
+**/logs/*.log*
+
+.classpath
+.project
+
+.idea
+*.ipr
+*.iml
+*.iws
