@@ -53,6 +53,9 @@ public class ${entity} implements Serializable {
 #end
 #if("$!field.comment" != "")
 #if(${swagger2})
+    /**
+     * ${field.comment}
+     */
     @ApiModelProperty(value = "${field.comment}")
 #else
     /**

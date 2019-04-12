@@ -9,6 +9,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.ieasy.utils.SnowFlakeUtil;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -28,17 +29,21 @@ public abstract class BaseEntity<T extends Model> extends Model {
     private static final long serialVersionUID = 1L;
     @TableId(value = "id")
     @ApiModelProperty(value = "唯一标识")
+    @CreatedBy
     private String id =String.valueOf(SnowFlakeUtil.getFlowIdInstance().nextId());
 
+    @TableId(value = "create_By")
     @ApiModelProperty(value = "创建者")
     private String createBy;
+
     @TableField(value="create_date", fill = FieldFill.INSERT)
     @CreatedDate
     @JsonFormat(timezone = "GMT+8", pattern = "yyyy-MM-dd HH:mm:ss")
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @ApiModelProperty(value = "创建时间")
-    private Date createTime;
+    private Date createDate;
 
+    @TableId(value = "update_By")
     @ApiModelProperty(value = "更新者")
     private String updateBy;
     /**
@@ -77,8 +82,5 @@ public abstract class BaseEntity<T extends Model> extends Model {
     @JsonFormat(timezone = "GMT+8", pattern = "yyyy-MM-dd HH:mm:ss")
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @ApiModelProperty(value = "更新时间")
-    private Date updateTime;
-
-    @ApiModelProperty(value = "删除标志 默认0")
-    private Integer delFlag;
+    private Date updateDate;
 }

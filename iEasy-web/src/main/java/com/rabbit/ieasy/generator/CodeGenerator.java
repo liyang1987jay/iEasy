@@ -52,7 +52,7 @@ public class CodeGenerator {
     /**
      * 基础实体类
      */
-    private static final String superEntityColumns = "id,createBy,createDate,updateBy,updateDate";
+    private static final String superEntityColumns = "id,create_by,create_date";
 
     public static void main(String[] args) {
         // 代码生成器

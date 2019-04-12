@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  *@description 操作日志表
  *@className   EasySysLogServiceImpl
  *@author      liyang
- *@createDate  2019-3-12 23:40
+ *@createDate  2019-3-13 0:09
  */
 @Service
 public class EasySysLogServiceImpl extends ServiceImpl<EasySysLogMapper, EasySysLog> implements IEasySysLogService {

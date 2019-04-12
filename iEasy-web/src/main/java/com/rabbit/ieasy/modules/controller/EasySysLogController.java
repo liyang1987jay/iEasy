@@ -12,7 +12,7 @@ import com.rabbit.ieasy.base.BaseController;
  *@description 操作日志表
  *@className   EasySysLogController
  *@author      liyang
- *@createDate  2019-3-12 23:40
+ *@createDate  2019-3-13 0:09
  */
 @RestController
 @RequestMapping("/easy-sys-log")

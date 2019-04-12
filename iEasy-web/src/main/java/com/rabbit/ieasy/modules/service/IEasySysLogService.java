@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  *@description 操作日志表
  *@className   IEasySysLogService
  *@author      liyang
- *@createDate  2019-3-12 23:40
+ *@createDate  2019-3-13 0:09
  */
 public interface IEasySysLogService extends IService<EasySysLog> {
 
