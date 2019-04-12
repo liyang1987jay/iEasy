@@ -47,6 +47,8 @@
         <mybatis-plus.version>3.1.0</mybatis-plus.version>
         <mysql-connector-java.version>5.1.47</mysql-connector-java.version>
         <jasypt.version>2.1.0</jasypt.version>
+        <fastjson.version>1.2.56</fastjson.version>
+        <org.mapstruct.version>1.3.0.Final</org.mapstruct.version>
     </properties>
     <dependencies>
         <dependency>
@@ -71,7 +73,8 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <optional>true</optional>
+            <version>1.18.6</version>
+            <!--<scope>provided</scope>-->
         </dependency>
         <!-- Quartz定时任务 -->
         <dependency>
@@ -117,6 +120,16 @@
             <artifactId>mybatis-plus-boot-starter</artifactId>
             <version>${mybatis-plus.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-generator</artifactId>
+            <version>${mybatis-plus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity-engine-core</artifactId>
+            <version>2.1</version>
+        </dependency>
         <!-- Mysql Connector -->
         <dependency>
             <groupId>mysql</groupId>
@@ -134,6 +147,11 @@
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
             <version>${hutool.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
         </dependency>
         <!-- JWT -->
         <dependency>
@@ -163,6 +181,12 @@
             <groupId>eu.bitwalker</groupId>
             <artifactId>UserAgentUtils</artifactId>
             <version>${UserAgentUtils.version}</version>
+        </dependency>
+        <!-- 验证框架-->
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>6.0.1.Final</version>
         </dependency>
         <!-- Apache Commons -->
         <dependency>
@@ -253,6 +277,22 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>
+        </dependency>
+        <!--获取jvm、cpu、内存等信息的工具类-->
+        <dependency>
+            <groupId>org.fusesource</groupId>
+            <artifactId>sigar</artifactId>
+            <version>1.6.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct-jdk8</artifactId>
+            <version>${org.mapstruct.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct-processor</artifactId>
+            <version>${org.mapstruct.version}</version>
         </dependency>
     </dependencies>
 </project>
