@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  *@description 
  *@className   EasySysLogMapper
  *@author      liyang
- *@createDate  2019-3-13 0:09
+ *@createDate  2019-3-18 16:28
  */
 public interface EasySysLogMapper extends BaseMapper<EasySysLog> {
 

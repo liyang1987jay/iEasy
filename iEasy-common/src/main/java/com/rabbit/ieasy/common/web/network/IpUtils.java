@@ -1,15 +1,15 @@
-package com.ieasy.common.web.network;
+package com.rabbit.ieasy.common.web.network;
 
-import com.ieasy.common.codec.EncodeUtils;
-import com.ieasy.common.io.PropertiesUtils;
-import com.ieasy.common.lang.StringUtils;
+import com.rabbit.ieasy.common.codec.EncodeUtils;
+import com.rabbit.ieasy.common.io.PropertiesUtils;
+import com.rabbit.ieasy.common.lang.StringUtils;
 
 import javax.servlet.http.HttpServletRequest;
 
 /**
  * @author liyang
  * @projectName iEasy
- * @packageName com.ieasy.core.web.network
+ * @packageName com.rabbit.ieasy.core.web.network
  * @description ip工具类
  * @className IpUtils
  * @createDate 2019-03-12 9:40 PM

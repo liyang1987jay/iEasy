@@ -1,4 +1,4 @@
-package com.ieasy.mapstruct;
+package com.rabbit.ieasy.mapstruct;
 
 import org.mapstruct.*;
 
@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * @author liyang
  * @projectName iEasy
- * @packageName com.ieasy.mapstruct
+ * @packageName com.rabbit.ieasy.mapstruct
  * @description
  * 基础转换类，提供基本的几个方法，直接继承就可以，如果有需要写Mappings的写在 {@link #to(Object)} 方法上
  * 并且接口类上一定要加上 {@link org.mapstruct.Mapper} 注解

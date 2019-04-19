@@ -1,4 +1,4 @@
-package com.ieasy.common.io;
+package com.rabbit.ieasy.common.io;
 
 import java.io.BufferedOutputStream;
 import java.io.File;
@@ -16,9 +16,9 @@ import javax.activation.MimetypesFileTypeMap;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.ieasy.common.codec.EncodeUtils;
-import com.ieasy.common.collect.ListUtils;
-import com.ieasy.common.lang.StringUtils;
+import com.rabbit.ieasy.common.codec.EncodeUtils;
+import com.rabbit.ieasy.common.collect.ListUtils;
+import com.rabbit.ieasy.common.lang.StringUtils;
 import org.apache.commons.io.Charsets;
 import org.apache.commons.io.IOUtils;
 import org.apache.tools.zip.ZipEntry;
@@ -33,7 +33,7 @@ import net.sf.jmimemagic.MagicMatch;
 /**
  * @author liyang
  * @projectName iEasy
- * @packageName com.ieasy.core.core.io
+ * @packageName com.rabbit.ieasy.core.core.io
  * @description
  * 文件操作工具类
  * 实现文件的创建、删除、复制、压缩、解压以及目录的创建、删除、复制、压缩解压等功能

@@ -1,4 +1,4 @@
-package com.ieasy.utils;
+package com.rabbit.ieasy.utils;
 
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.json.JSONObject;
@@ -9,7 +9,7 @@ import java.util.*;
 /**
  * @author liyang
  * @projectName iEasy
- * @packageName com.ieasy.utils
+ * @packageName com.rabbit.ieasy.utils
  * @description
  * @className ToolUtils
  * @createDate 2019-03-19 10:36 PM

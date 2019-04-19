@@ -1,7 +1,7 @@
-package com.ieasy.common.lang;
+package com.rabbit.ieasy.common.lang;
 
-import com.ieasy.common.codec.EncodeUtils;
-import com.ieasy.common.collect.ListUtils;
+import com.rabbit.ieasy.common.codec.EncodeUtils;
+import com.rabbit.ieasy.common.collect.ListUtils;
 
 import java.io.UnsupportedEncodingException;
 import java.util.List;
@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
 /**
  * @author liyang
  * @projectName iEasy
- * @packageName com.ieasy.core.core.lang
+ * @packageName com.rabbit.ieasy.core.core.lang
  * @description 字符串工具类, 继承org.apache.commons.lang3.StringUtils类
  * @className StringUtils
  * @createDate 2019-03-12 9:56 PM

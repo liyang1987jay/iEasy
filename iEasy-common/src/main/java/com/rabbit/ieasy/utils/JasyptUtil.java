@@ -1,4 +1,4 @@
-package com.ieasy.utils;
+package com.rabbit.ieasy.utils;
 
 import lombok.extern.slf4j.Slf4j;
 import org.jasypt.encryption.pbe.PooledPBEStringEncryptor;
@@ -7,7 +7,7 @@ import org.jasypt.encryption.pbe.config.SimpleStringPBEConfig;
 /**
  * @author liyang
  * @projectName iEasy
- * @packageName com.ieasy.utils
+ * @packageName com.rabbit.ieasy.utils
  * @description
  * @className JasyptUtil
  * @createDate 2019-03-19 9:04 PM
@@ -55,8 +55,8 @@ public class JasyptUtil {
     public static void main(String[] args){
 
         //加密
-        System.out.println(encyptPwd("ieay","123456"));
+        System.out.println(encyptPwd("ieasy","12345678"));
         //解密
-        System.out.println(decyptPwd("ieasy","F4B0s6u9xcDw3V+P0qC4CA=="));
+        System.out.println(decyptPwd("ieasy","2XaMILk4N6ZUydBTMJTJeT2DVn1ruYit"));
     }
 }

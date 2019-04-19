@@ -1,4 +1,4 @@
-package com.ieasy.config;
+package com.rabbit.ieasy.config;
 
 import com.alibaba.fastjson.serializer.SerializeConfig;
 import com.alibaba.fastjson.serializer.SerializerFeature;
@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import java.math.BigInteger;
 import java.nio.charset.Charset;
@@ -20,14 +21,14 @@ import java.util.List;
 /**
  * @author liyang
  * @projectName iEasy
- * @packageName com.ieasy.config
+ * @packageName com.rabbit.ieasy.config
  * @description
  * @className FastJsonConfiguration
  * @createDate 2019-03-28 8:14 PM
  */
 @Slf4j
 @Configuration
-public class FastJsonConfiguration extends WebMvcConfigurationSupport {
+public class FastJsonConfiguration implements WebMvcConfigurer {
 
     /**
      * 功能描述:  修改自定义消息转换器
@@ -39,7 +40,7 @@ public class FastJsonConfiguration extends WebMvcConfigurationSupport {
      */
     @Override
     public void extendMessageConverters(List<HttpMessageConverter<?>> converters) {
-        super.configureMessageConverters(converters);
+        //super.configureMessageConverters(converters);
         //创建fastJson消息转换器
         FastJsonHttpMessageConverter fastConverter = new FastJsonHttpMessageConverter();
         //创建配置类

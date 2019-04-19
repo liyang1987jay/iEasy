@@ -1,6 +1,6 @@
-package com.ieasy.common.io;
+package com.rabbit.ieasy.common.io;
 
-import com.ieasy.common.lang.ExceptionUtils;
+import com.rabbit.ieasy.common.lang.ExceptionUtils;
 import org.apache.commons.io.IOUtils;
 import org.springframework.core.io.DefaultResourceLoader;
 import org.springframework.core.io.Resource;
@@ -14,7 +14,7 @@ import java.io.InputStream;
 /**
  * @author liyang
  * @projectName iEasy
- * @packageName com.ieasy.core.core.io
+ * @packageName com.rabbit.ieasy.core.core.io
  * @description 资源供给类
  * @className ResourceUtils
  * @createDate 2019-03-12 9:49 PM

@@ -1,7 +1,7 @@
-package com.ieasy.common.io;
+package com.rabbit.ieasy.common.io;
 
-import com.ieasy.common.collect.SetUtils;
-import com.ieasy.common.lang.ObjectUtils;
+import com.rabbit.ieasy.common.collect.SetUtils;
+import com.rabbit.ieasy.common.lang.ObjectUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,7 +22,7 @@ import java.util.regex.Pattern;
 /**
  * @author liyang
  * @projectName iEasy
- * @packageName com.ieasy.core.core.io
+ * @packageName com.rabbit.ieasy.core.core.io
  * @description
  * Properties工具类， 可载入多个properties、yml文件，
  * 相同的属性在最后载入的文件中的值将会覆盖之前的值，

@@ -6,7 +6,7 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.ieasy.utils.SnowFlakeUtil;
+import com.rabbit.ieasy.utils.SnowFlakeUtil;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import org.springframework.data.annotation.CreatedBy;
@@ -43,9 +43,9 @@ public abstract class BaseEntity<T extends Model> extends Model {
     @ApiModelProperty(value = "创建时间")
     private Date createDate;
 
-    @TableId(value = "update_By")
-    @ApiModelProperty(value = "更新者")
-    private String updateBy;
+//    @TableId(value = "update_By")
+//    @ApiModelProperty(value = "更新者")
+//    private String updateBy;
     /**
      * 更新日期<br>
      * @TableField注解说明：<br>
@@ -77,10 +77,10 @@ public abstract class BaseEntity<T extends Model> extends Model {
      * <b>注意：</b><br>
      * setter优先级和fill策略优先级，是在MetaObjectHandler中自己手动实现的。
      */
-    @TableField(value="update_date", fill = FieldFill.INSERT, update="NOW()")
-    @LastModifiedDate
-    @JsonFormat(timezone = "GMT+8", pattern = "yyyy-MM-dd HH:mm:ss")
-    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    @ApiModelProperty(value = "更新时间")
-    private Date updateDate;
+//    @TableField(value="update_date", fill = FieldFill.INSERT, update="NOW()")
+//    @LastModifiedDate
+//    @JsonFormat(timezone = "GMT+8", pattern = "yyyy-MM-dd HH:mm:ss")
+//    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+//    @ApiModelProperty(value = "更新时间")
+//    private Date updateDate;
 }

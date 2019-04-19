@@ -1,7 +1,7 @@
-package com.ieasy.config;
+package com.rabbit.ieasy.config;
 
 import com.google.common.collect.Maps;
-import com.ieasy.xss.XssFilter;
+import com.rabbit.ieasy.xss.XssFilter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
@@ -12,7 +12,7 @@ import java.util.Map;
 /**
  * @author liyang
  * @projectName iEasy
- * @packageName com.ieasy.config
+ * @packageName com.rabbit.ieasy.config
  * @description
  * @className XssConfig
  * @createDate 2019-03-19 9:38 PM

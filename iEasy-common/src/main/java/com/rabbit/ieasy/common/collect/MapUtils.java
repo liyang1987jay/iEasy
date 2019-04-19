@@ -1,6 +1,6 @@
-package com.ieasy.common.collect;
+package com.rabbit.ieasy.common.collect;
 
-import com.ieasy.common.lang.StringUtils;
+import com.rabbit.ieasy.common.lang.StringUtils;
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.beanutils.PropertyUtils;
 
@@ -12,7 +12,7 @@ import java.util.concurrent.ConcurrentMap;
 /**
  * @author liyang
  * @projectName iEasy
- * @packageName com.ieasy.core.core.collect
+ * @packageName com.rabbit.ieasy.core.core.collect
  * @description Map工具类，实现 Map <-> Bean 互相转换
  * @className MapUtils
  * @createDate 2019-03-12 10:08 PM

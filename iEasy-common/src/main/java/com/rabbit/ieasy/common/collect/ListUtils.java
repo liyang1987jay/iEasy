@@ -1,8 +1,8 @@
-package com.ieasy.common.collect;
+package com.rabbit.ieasy.common.collect;
 
-import com.ieasy.common.lang.ObjectUtils;
-import com.ieasy.common.lang.StringUtils;
-import com.ieasy.common.reflect.ReflectUtils;
+import com.rabbit.ieasy.common.lang.ObjectUtils;
+import com.rabbit.ieasy.common.lang.StringUtils;
+import com.rabbit.ieasy.common.reflect.ReflectUtils;
 import org.apache.commons.beanutils.PropertyUtils;
 
 import java.util.*;
@@ -11,7 +11,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 /**
  * @author liyang
  * @projectName iEasy
- * @packageName com.ieasy.core.core.collect
+ * @packageName com.rabbit.ieasy.core.core.collect
  * @description List工具类
  * @className ListUtils
  * @createDate 2019-03-12 9:58 PM

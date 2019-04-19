@@ -1,8 +1,8 @@
-package com.ieasy.common.codec;
+package com.rabbit.ieasy.common.codec;
 
-import com.ieasy.common.collect.ListUtils;
-import com.ieasy.common.lang.ExceptionUtils;
-import com.ieasy.common.lang.StringUtils;
+import com.rabbit.ieasy.common.collect.ListUtils;
+import com.rabbit.ieasy.common.lang.ExceptionUtils;
+import com.rabbit.ieasy.common.lang.StringUtils;
 import org.apache.commons.codec.DecoderException;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.codec.binary.Hex;
@@ -20,7 +20,7 @@ import java.util.regex.Pattern;
 /**
  * @author liyang
  * @projectName iEasy
- * @packageName com.ieasy.core.core.codec
+ * @packageName com.rabbit.ieasy.core.core.codec
  * @description
  * 封装各种格式的编码解码工具类.
  * 1.Commons-Codec的 hex/base64 编码

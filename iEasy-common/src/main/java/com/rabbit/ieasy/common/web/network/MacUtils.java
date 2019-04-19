@@ -1,4 +1,4 @@
-package com.ieasy.common.web.network;
+package com.rabbit.ieasy.common.web.network;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 /**
  * @author liyang
  * @projectName iEasy
- * @packageName com.ieasy.core.web.network
+ * @packageName com.rabbit.ieasy.core.web.network
  * @description MAC地址工具
  * @className MacUtils
  * @createDate 2019-03-12 9:42 PM

@@ -1,4 +1,4 @@
-package com.ieasy.support;
+package com.rabbit.ieasy.support;
 
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;

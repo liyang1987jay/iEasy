@@ -1,4 +1,4 @@
-package com.ieasy.utils;
+package com.rabbit.ieasy.utils;
 
 import org.apache.commons.lang3.StringUtils;
 import org.jsoup.Jsoup;
@@ -10,7 +10,7 @@ import java.io.IOException;
 /**
  * @author liyang
  * @projectName iEasy
- * @packageName com.ieasy.utils
+ * @packageName com.rabbit.ieasy.utils
  * @description
  * @className JsoupUtil
  * @createDate 2019-03-19 9:41 PM

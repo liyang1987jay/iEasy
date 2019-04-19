@@ -1,61 +1,59 @@
-package com.ieasy.utils;
+package com.rabbit.ieasy.utils;
 
-import com.ieasy.enums.HttpStatus;
-
-import java.util.HashMap;
-import java.util.Map;
+import com.rabbit.ieasy.enums.HttpStatus;
+import com.rabbit.ieasy.vo.Result;
 
 /**
  * @author liyang
  * @projectName iEasy
- * @packageName com.ieasy.utils
+ * @packageName com.rabbit.ieasy.utils
  * @description
  * @className ResultUtilUtil
  * @createDate 2019-03-19 10:05 PM
  */
-public class ResultUtil extends HashMap<String, Object> {
+public class ResultUtil<T> {
 
-    private static final long serialVersionUID = 1L;
+    private Result<T> result;
 
     public ResultUtil() {
-        put("code", HttpStatus.OK.getCode());
-        put("msg",HttpStatus.OK.getMessage());
+        result = new Result<>();
+        result.setCode(HttpStatus.OK.getCode());
+        result.setSuccess(true);
+        result.setMessage(HttpStatus.OK.getMessage());
     }
 
-    public static ResultUtil error() {
-        return error( HttpStatus.INTERNAL_SERVER_ERROR.getCode(), HttpStatus.INTERNAL_SERVER_ERROR.getMessage());
+    public Result<T> error() {
+        return error(HttpStatus.INTERNAL_SERVER_ERROR.getCode(), HttpStatus.INTERNAL_SERVER_ERROR.getMessage());
     }
 
-    public static ResultUtil error(String msg) {
-        return error(500, msg);
+    public Result<T> error(String msg) {
+        return error(HttpStatus.INTERNAL_SERVER_ERROR.getCode(), msg);
     }
 
-    public static ResultUtil error(int code, String msg) {
-        ResultUtil r = new ResultUtil();
-        r.put("code", code);
-        r.put("msg", msg);
-        return r;
+    public Result<T> error(int code, String msg) {
+        this.result.setMessage(msg);
+        this.result.setCode(code);
+        this.result.setSuccess(false);
+        return this.result;
     }
 
-    public static ResultUtil ok(String msg) {
-        ResultUtil r = new ResultUtil();
-        r.put("msg", msg);
-        return r;
+    public Result<T> ok(String msg) {
+        this.result.setMessage(msg);
+        return this.result;
     }
 
-    public static ResultUtil ok(Map<String, Object> map) {
-        ResultUtil r = new ResultUtil();
-        r.putAll(map);
-        return r;
+    public Result<T> oks(T t) {
+        this.result.setCode(HttpStatus.OK.getCode());
+        this.result.setResult(t);
+        return this.result;
     }
 
-    public static ResultUtil ok() {
-        return new ResultUtil();
+    public Result<T> oks(T t, String msg) {
+        this.result.setResult(t);
+        this.result.setCode(HttpStatus.OK.getCode());
+        this.result.setMessage(msg);
+        this.result.setSuccess(true);
+        return this.result;
     }
 
-    @Override
-    public ResultUtil put(String key, Object value) {
-        super.put(key, value);
-        return this;
-    }
 }

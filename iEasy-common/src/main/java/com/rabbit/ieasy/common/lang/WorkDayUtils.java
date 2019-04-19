@@ -1,11 +1,11 @@
-package com.ieasy.common.lang;
+package com.rabbit.ieasy.common.lang;
 
 import java.util.Calendar;
 
 /**
  * @author liyang
  * @projectName iEasy
- * @packageName com.ieasy.core.core.lang
+ * @packageName com.rabbit.ieasy.core.core.lang
  * @description 工作日计算工具类
  * @className WorkDayUtils
  * @createDate 2019-03-12 10:05 PM

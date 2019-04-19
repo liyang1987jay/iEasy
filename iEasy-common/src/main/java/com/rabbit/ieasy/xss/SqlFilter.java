@@ -1,13 +1,13 @@
-package com.ieasy.xss;
+package com.rabbit.ieasy.xss;
 
-import com.ieasy.common.lang.StringUtils;
-import com.ieasy.enums.BusinessStatusEnum;
-import com.ieasy.exception.IEasyException;
+import com.rabbit.ieasy.common.lang.StringUtils;
+import com.rabbit.ieasy.exception.IEasyException;
+import com.rabbit.ieasy.enums.BusinessStatusEnum;
 
 /**
  * @author liyang
  * @projectName iEasy
- * @packageName com.ieasy.xss
+ * @packageName com.rabbit.ieasy.xss
  * @description
  * @className SqlFilter
  * @createDate 2019-03-19 9:42 PM

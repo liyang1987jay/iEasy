@@ -1,13 +1,13 @@
-package com.ieasy.exception;
+package com.rabbit.ieasy.exception;
 
-import com.ieasy.enums.HttpStatus;
+import com.rabbit.ieasy.enums.HttpStatus;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
 /**
  * @author liyang
  * @projectName iEasy
- * @packageName com.ieasy.exception
+ * @packageName com.rabbit.ieasy.exception
  * @description ieay异常
  * @className IEasyException
  * @createDate 2019-03-19 9:44 PM

@@ -1,4 +1,4 @@
-package com.ieasy.common.web.http;
+package com.rabbit.ieasy.common.web.http;
 
 import eu.bitwalker.useragentutils.Browser;
 import eu.bitwalker.useragentutils.DeviceType;
@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * @author liyang
  * @projectName iEasy
- * @packageName com.ieasy.core.web.http
+ * @packageName com.rabbit.ieasy.core.web.http
  * @description 用户代理字符串识别工具
  * @className UserAgentUtils
  * @createDate 2019-03-12 9:28 PM

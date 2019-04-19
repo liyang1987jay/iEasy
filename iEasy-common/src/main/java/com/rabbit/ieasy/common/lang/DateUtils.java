@@ -1,4 +1,4 @@
-package com.ieasy.common.lang;
+package com.rabbit.ieasy.common.lang;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.time.FastDateFormat;
@@ -11,7 +11,7 @@ import java.util.Date;
 /**
  * @author liyang
  * @projectName iEasy
- * @packageName com.ieasy.core.core.lang
+ * @packageName com.rabbit.ieasy.core.core.lang
  * @description
  * @className DateUtils
  * @createDate 2019-03-12 10:04 PM

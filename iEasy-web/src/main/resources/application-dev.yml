@@ -2,11 +2,8 @@
 jasypt:
   encryptor:
     password: ieasy
-
 server:
   port: 8083
-  servlet:
-    context-path: /
   tomcat:
     uri-encoding: utf-8
     max-threads: 1000
@@ -15,10 +12,10 @@ spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://localhost:3306/ieat?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
+    url: jdbc:mysql://localhost:3306/ieasy?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
     # Jasypt加密 可到common-utils中找到JasyptUtil加解密工具类生成加密结果 格式为ENC(加密结果)
-    username: ENC(F6yFoRaZPl90/EttnO8DlA==)
-    password: ENC(TTuPR36QunJZGaJXpvit3emgR/i9mx2y)
+    username: root
+    password: ENC(2XaMILk4N6ZUydBTMJTJeT2DVn1ruYit)
     druid:
       stat-view-servlet:
         # 默认true 内置监控页面首页/druid/index.html
@@ -26,8 +23,8 @@ spring:
         url-pattern: /druid/*
         # 允许清空统计数据
         reset-enable: true
-        login-username: ENC(pmwqrv67USUhFszaWVwXgw==)
-        login-password: ENC(TTuPR36QunJZGaJXpvit3emgR/i9mx2y)
+        login-username: admin
+        login-password: 12345678
         # IP白名单 多个逗号分隔
         allow:
         # IP黑名单
@@ -39,18 +36,25 @@ spring:
     database: 0
     host: 127.0.0.1
     port: 6379
-    password: ENC(cFzRzuXyDO+PSMu+ZDt3Qg==)
-    timeout: 3S
+    password: 123456
+    timeout: 100ms
+    lettuce:
+      pool:
+        max-active: 8
+        max-idle: 8
+        max-wait: 1ms
   servlet:
     multipart:
-      max-file-size: 5M
-      max-request-size: 5M
+      max-file-size: 5MB
+      max-request-size: 5MB
+  jmx:
+    default-domain: ieasy
 # Swagger界面内容配置
 swagger:
   title: iEasy API接口文档
   description: iEasy Api Documentation
   version: 1.0.0
-  termsOfServiceUrl: http://xxxxx
+  termsOfServiceUrl: http://localhost:8083/
   enabel: true #false则关闭生成swagger文档
   contact:
     name: rabbit
@@ -69,7 +73,7 @@ ignored:
 mybatis-plus:
   # 如果是放在src/main/java目录下 classpath:/com/yourpackage/*/mapper/*Mapper.xml
   # 如果是放在resource目录 classpath:/mapper/*Mapper.xml
-  mapper-locations: classpath:/com/ctrl/education/dao/mapper/*Mapper.xml
+  mapper-locations: classpath:/mapper/*Mapper.xml
   #实体扫描，多个package用逗号或者分号分隔
   typeAliasesPackage: com.rabbit.ieasy.web.modules.*.entity
   global-config:

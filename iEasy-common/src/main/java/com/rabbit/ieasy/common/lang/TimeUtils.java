@@ -1,11 +1,11 @@
-package com.ieasy.common.lang;
+package com.rabbit.ieasy.common.lang;
 
 import java.util.Date;
 
 /**
  * @author liyang
  * @projectName iEasy
- * @packageName com.ieasy.core.core.lang
+ * @packageName com.rabbit.ieasy.core.core.lang
  * @description 时间计算工具类
  * @className TimeUtils
  * @createDate 2019-03-12 10:02 PM

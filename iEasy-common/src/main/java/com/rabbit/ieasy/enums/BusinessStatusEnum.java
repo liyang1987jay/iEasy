@@ -1,4 +1,4 @@
-package com.ieasy.enums;
+package com.rabbit.ieasy.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,7 +7,7 @@ import lombok.Getter;
 /**
  * @author liyang
  * @projectName iEasy
- * @packageName com.ieasy.enums
+ * @packageName com.rabbit.ieasy.enums
  * @description 业务状态枚举类
  * @className BusinessStatusEnum
  * @createDate 2019-03-31 8:50 PM
@@ -30,6 +30,8 @@ public enum BusinessStatusEnum {
     ENABLE_FAIL(10012, "启用失败"),
     DISABLE_SUCCESS(10013, "禁用成功"),
     DISABLE_FAIL(10014, "禁用失败"),
+    RESULT_FLAG(10015,"result"),
+    PAGE_TOTAL(10016,"total")
     ;
     private Integer code;
 

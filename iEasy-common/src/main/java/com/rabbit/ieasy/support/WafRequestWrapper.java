@@ -1,4 +1,4 @@
-package com.ieasy.support;
+package com.rabbit.ieasy.support;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletRequestWrapper;

@@ -17,7 +17,7 @@ import lombok.experimental.Accessors;
  *@description 操作日志表
  *@className   EasySysLog
  *@author      liyang
- *@createDate  2019-3-13 0:09
+ *@createDate  2019-3-18 16:28
  */
 @Data
 @EqualsAndHashCode(callSuper = true)

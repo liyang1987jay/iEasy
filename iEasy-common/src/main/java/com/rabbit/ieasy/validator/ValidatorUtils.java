@@ -1,6 +1,6 @@
-package com.ieasy.validator;
+package com.rabbit.ieasy.validator;
 
-import com.ieasy.exception.IEasyException;
+import com.rabbit.ieasy.exception.IEasyException;
 import org.hibernate.validator.HibernateValidator;
 
 import javax.validation.ConstraintViolation;
@@ -12,7 +12,7 @@ import java.util.Set;
 /**
  * @author liyang
  * @projectName iEasy
- * @packageName com.ieasy.ValidatorUtils
+ * @packageName com.rabbit.ieasy.ValidatorUtils
  * @description hibernate validation统一验证支持分组
  * @className ValidatorUtils
  * @createDate 2019-03-19 10:22 PM

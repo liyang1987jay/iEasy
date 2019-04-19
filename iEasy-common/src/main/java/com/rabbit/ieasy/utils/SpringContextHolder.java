@@ -1,4 +1,4 @@
-package com.ieasy.utils;
+package com.rabbit.ieasy.utils;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 /**
  * @author liyang
  * @projectName iEasy
- * @packageName com.ieasy.utils
+ * @packageName com.rabbit.ieasy.utils
  * @description
  * @className SpringContextHolder
  * @createDate 2019-03-28 10:51 PM

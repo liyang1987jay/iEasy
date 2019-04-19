@@ -1,4 +1,4 @@
-package com.ieasy.common.collect;
+package com.rabbit.ieasy.common.collect;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
@@ -7,7 +7,7 @@ import java.util.concurrent.CopyOnWriteArraySet;
 /**
  * @author liyang
  * @projectName iEasy
- * @packageName com.ieasy.core.core.collect
+ * @packageName com.rabbit.ieasy.core.core.collect
  * @description
  * @className SetUtils
  * @createDate 2019-03-12 9:46 PM
@@ -91,7 +91,7 @@ public class SetUtils extends org.apache.commons.collections.SetUtils {
     }
 
     public static <E> CopyOnWriteArraySet<E> newCopyOnWriteArraySet(Iterable<? extends E> elements) {
-        Collection<? extends E> elementsCollection = (elements instanceof Collection) ? cast(elements) : ListUtils.newArrayList(elements);
+        Collection<? extends E> elementsCollection = (elements instanceof Collection) ? cast(elements) : com.rabbit.ieasy.common.collect.ListUtils.newArrayList(elements);
         return new CopyOnWriteArraySet<E>(elementsCollection);
     }
 

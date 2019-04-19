@@ -1,4 +1,4 @@
-package com.ieasy.xss;
+package com.rabbit.ieasy.xss;
 
 import org.apache.commons.lang3.BooleanUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -17,7 +17,7 @@ import java.util.regex.Pattern;
 /**
  * @author liyang
  * @projectName iEasy
- * @packageName com.ieasy.xss
+ * @packageName com.rabbit.ieasy.xss
  * @description
  * @className XssFilter
  * @createDate 2019-03-19 9:39 PM

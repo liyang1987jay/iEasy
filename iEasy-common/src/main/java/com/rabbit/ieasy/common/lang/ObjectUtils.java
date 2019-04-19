@@ -1,4 +1,4 @@
-package com.ieasy.common.lang;
+package com.rabbit.ieasy.common.lang;
 
 import cn.hutool.core.thread.threadlocal.NamedThreadLocal;
 import org.apache.commons.lang3.BooleanUtils;
@@ -16,7 +16,7 @@ import java.lang.reflect.Method;
 /**
  * @author liyang
  * @projectName iEasy
- * @packageName com.ieasy.core.core.lang
+ * @packageName com.rabbit.ieasy.core.core.lang
  * @description 对象操作工具类, 继承org.apache.commons.lang3.ObjectUtils类
  * @className ObjectUtils
  * @createDate 2019-03-12 10:00 PM

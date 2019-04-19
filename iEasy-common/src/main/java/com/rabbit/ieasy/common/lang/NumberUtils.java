@@ -1,4 +1,4 @@
-package com.ieasy.common.lang;
+package com.rabbit.ieasy.common.lang;
 
 import java.math.BigDecimal;
 import java.text.DecimalFormat;
@@ -6,7 +6,7 @@ import java.text.DecimalFormat;
 /**
  * @author liyang
  * @projectName iEasy
- * @packageName com.ieasy.core.core.lang
+ * @packageName com.rabbit.ieasy.core.core.lang
  * @description BigDecimal工具类
  * @className NumberUtils
  * @createDate 2019-03-12 10:06 PM

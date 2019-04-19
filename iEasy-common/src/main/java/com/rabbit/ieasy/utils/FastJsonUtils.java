@@ -1,4 +1,4 @@
-package com.ieasy.utils;
+package com.rabbit.ieasy.utils;
 
 import com.alibaba.druid.util.StringUtils;
 import com.alibaba.fastjson.JSON;
@@ -16,7 +16,7 @@ import java.util.Map;
 /**
  * @author liyang
  * @projectName iEasy
- * @packageName com.ieasy.utils
+ * @packageName com.rabbit.ieasy.utils
  * @description FastJsonUtils工具类
  * @className FastJsonUtils
  * @createDate 2019-03-28 10:16 PM

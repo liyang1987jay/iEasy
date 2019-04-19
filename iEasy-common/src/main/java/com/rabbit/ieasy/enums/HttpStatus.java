@@ -1,4 +1,4 @@
-package com.ieasy.enums;
+package com.rabbit.ieasy.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -6,7 +6,7 @@ import lombok.Getter;
 /**
  * @author liyang
  * @projectName iEasy
- * @packageName com.ieasy.enums
+ * @packageName com.rabbit.ieasy.enums
  * @description http状态码枚举类
  * @className HttpStatus
  * @createDate 2019-03-31 8:28 PM

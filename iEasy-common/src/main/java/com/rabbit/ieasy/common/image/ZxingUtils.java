@@ -1,4 +1,4 @@
-package com.ieasy.common.image;
+package com.rabbit.ieasy.common.image;
 
 import com.google.zxing.*;
 import com.google.zxing.client.j2se.BufferedImageLuminanceSource;
@@ -15,7 +15,7 @@ import java.util.Hashtable;
 /**
  * @author liyang
  * @projectName iEasy
- * @packageName com.ieasy.core.core.image
+ * @packageName com.rabbit.ieasy.core.core.image
  * @description 条形码和二维码编码解码
  * @className ZxingUtils
  * @createDate 2019-03-12 10:32 PM

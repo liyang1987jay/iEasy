@@ -1,6 +1,6 @@
-package com.ieasy.common.web;
+package com.rabbit.ieasy.common.web;
 
-import com.ieasy.common.lang.StringUtils;
+import com.rabbit.ieasy.common.lang.StringUtils;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -12,7 +12,7 @@ import java.net.URLEncoder;
 /**
  * @author liyang
  * @projectName iEasy
- * @packageName com.ieasy.core.web
+ * @packageName com.rabbit.ieasy.core.web
  * @description Cookie工具类
  * @className CookieUtils
  * @createDate 2019-03-12 10:37 PM

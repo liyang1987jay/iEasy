@@ -1,4 +1,4 @@
-package com.ieasy.config;
+package com.rabbit.ieasy.config;
 
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
 import com.baomidou.mybatisplus.core.parser.ISqlParser;
@@ -18,14 +18,14 @@ import java.util.List;
 /**
  * @author liyang
  * @projectName iEasy
- * @packageName com.ieasy.config
+ * @packageName com.rabbit.ieasy.config
  * @description
  * @className MybatisPlusConfig
  * @createDate 2019-03-19 9:35 PM
  */
 @EnableTransactionManagement
 @Configuration
-@MapperScan("com.ctrl.education.dao")
+@MapperScan("com.rabbit.ieasy.modules.dao")
 public class MybatisPlusConfig {
     /**
      * mybatis-plus SQL执行效率插件【生产环境可以关闭】

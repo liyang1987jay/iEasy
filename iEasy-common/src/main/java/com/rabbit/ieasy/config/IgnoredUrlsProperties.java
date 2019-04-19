@@ -1,4 +1,4 @@
-package com.ieasy.config;
+package com.rabbit.ieasy.config;
 
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * @author liyang
  * @projectName iEasy
- * @packageName com.ieasy.config
+ * @packageName com.rabbit.ieasy.config
  * @description
  * @className IgnoredUrlsProperties
  * @createDate 2019-03-19 9:33 PM

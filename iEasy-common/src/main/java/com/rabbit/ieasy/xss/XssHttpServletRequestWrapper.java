@@ -1,6 +1,6 @@
-package com.ieasy.xss;
+package com.rabbit.ieasy.xss;
 
-import com.ieasy.utils.JsoupUtil;
+import com.rabbit.ieasy.utils.JsoupUtil;
 import org.apache.commons.lang3.StringUtils;
 
 import javax.servlet.http.HttpServletRequest;
@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequestWrapper;
 /**
  * @author liyang
  * @projectName iEasy
- * @packageName com.ieasy.xss
+ * @packageName com.rabbit.ieasy.xss
  * @description
  * @className XssHttpServletRequestWrapper
  * @createDate 2019-03-19 9:40 PM
