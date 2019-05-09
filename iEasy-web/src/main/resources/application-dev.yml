@@ -64,8 +64,7 @@ swagger:
 ignored:
   urls:
   - /iEasy/common/**
-  - /druid/**
-  - /swagger-ui.html
+  - /doc.html
   - /swagger-resources/**
   - /swagger/**
   - /test/**

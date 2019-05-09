@@ -16,7 +16,7 @@ import lombok.Getter;
 @AllArgsConstructor
 public enum BusinessStatusEnum {
     NOT_VALID_CHARACTER(10000, "不合法的字符"),
-    PRAMA_NOT_NULL(10001, "参数不能为空"),
+    PARAM_NOT_NULL(10001, "参数不能为空"),
     PARAM_ERROR(10002, "参数错误"),
     QUERY_SUCCESS(10003, "查询成功"),
     QUERY_FAIL(10004, "查询失败"),
